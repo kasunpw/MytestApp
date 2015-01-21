@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "EditEmployee";
+}
+<h2>EditEmployee</h2>
+<table>
+    <tr>
+        <td>EmpNo</td>
+        <td><input type="text" ng-model="Employee.EmpNo" />  </td>
+    </tr>
+    <tr>
+        <td>EmpName</td>
+        <td><input type="text" ng-model="Employee.EmpName" />  </td>
+    </tr>
+    <tr>
+        <td>Salary</td>
+        <td><input type="text" ng-model="Employee.Salary" />  </td>
+    </tr>
+    <tr>
+        <td>DeptName</td>
+        <td>
+            <select id="Select1" name="selectedDepartment" ng-model="selectedDepartment" ng-options="department.departmentName for department in departments" required>
+                <option style="display:none" value="">Select Department</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Designation</td>
+        <td>
+            <select id="Select1" name="selectedDesignation" ng-model="selectedDesignation" ng-options="des.designation for des in designations" required>
+                <option style="display:none" value="">Select Designation</option>
+            </select>
+        </td>
+    </tr>
+</table>
+<input type="button" value="Save" ng-click="save()" />
+<input type="button" value="Cancel" ng-click="cancelSave()" />
+<div>{{error}}</div>
