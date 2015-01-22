@@ -1,4 +1,4 @@
-﻿app.controller("DeleteEmployeeController", function ($scope, $location, ShareData, SinglePageCRUDService) {
+﻿app.controller("DeleteEmployeeController", function ($scope, $location, ShareData, SinglePageCRUDService, toaster) {
 
     getEmployee();
     function getEmployee() {
@@ -18,7 +18,8 @@
             var promiseDeleteEmployee = SinglePageCRUDService.delete(ShareData.value);
 
             promiseDeleteEmployee.then(function (pl) {
-                $location.path("/showemployee");
+                toaster.pop('success', "", "Employee Deleted Successfully");
+                $location.path("/showemployees");
             },
                   function (errorPl) {
                       $scope.error = 'failure loading Employee', errorPl;

@@ -7,7 +7,7 @@
 
 <h2>Index</h2>
 <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-
+<link href="~/Content/toaster/toaster.css" rel="stylesheet" />
 <body ng-app="ApplicationModule">
     <div>
         <div>
@@ -24,18 +24,20 @@
             </div>
         </div>
     </div>
-     
+    <toaster-container toaster-options="{'position-class': 'toast-top-right'}"></toaster-container>
 </body>
 
 
 @section scripts{
   <script type="text/javascript" src="@Url.Content("~/Scripts/angular.js")"></script>   
   <script type="text/javascript" src="@Url.Content("~/Scripts/angular-route.min.js")"></script>   
+<script src="~/Scripts/angular-animate.js"></script>
   <script type="text/javascript" src="@Url.Content("~/MyScripts/Module.js")"></script>
 <script src="~/MyScripts/Services.js"></script>
   <script type="text/javascript" src="@Url.Content("~/MyScripts/ShowEmployeesController.js")"></script> 
   <script type="text/javascript" src="@Url.Content("~/MyScripts/AddEmpController.js")"></script> 
     <script type="text/javascript" src="@Url.Content("~/MyScripts/EditEmployeeController.js")"></script> 
-    <script type="text/javascript" src="@Url.Content("~/MyScripts/DeleteEmployeeController.js")"></script>   
+    <script type="text/javascript" src="@Url.Content("~/MyScripts/DeleteEmployeeController.js")"></script>  
+     <script type="text/javascript" src="@Url.Content("~/Scripts/toaster.js")"></script>
  }
 

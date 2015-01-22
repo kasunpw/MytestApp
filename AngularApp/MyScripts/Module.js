@@ -1,4 +1,4 @@
-﻿    var app = angular.module("ApplicationModule", ["ngRoute"]);
+﻿var app = angular.module("ApplicationModule", ["ngRoute",'ngAnimate', 'toaster']);
 
     app.factory("ShareData", function () {
         return { value: 0 }

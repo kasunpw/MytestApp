@@ -1,4 +1,4 @@
-﻿app.controller("EditEmployeeController", function ($scope, $location,ShareData,SinglePageCRUDService) {
+﻿app.controller("EditEmployeeController", function ($scope, $location, ShareData, SinglePageCRUDService, toaster) {
     $scope.selectedDepartment = undefined;
     $scope.selectedDesignation = undefined;
     getEmployee();
@@ -41,6 +41,7 @@
         var promisePutEmployee = SinglePageCRUDService.put($scope.Employee.EmpNo,Employee);
         promisePutEmployee.then(function (pl)
         {
+            toaster.pop('success', "", "Employee Details Saved Successfully");
             $location.path("/showemployees");
         },
               function (errorPl) {
