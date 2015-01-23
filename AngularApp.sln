@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularApp", "AngularApp\AngularApp.csproj", "{837E707B-E3FA-41E6-AA1F-0A2B4A487F75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularAppTest", "AngularAppTest\AngularAppTest.csproj", "{5BD8248F-C9CC-4177-847D-1FD38AC69DC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{837E707B-E3FA-41E6-AA1F-0A2B4A487F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{837E707B-E3FA-41E6-AA1F-0A2B4A487F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{837E707B-E3FA-41E6-AA1F-0A2B4A487F75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD8248F-C9CC-4177-847D-1FD38AC69DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD8248F-C9CC-4177-847D-1FD38AC69DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD8248F-C9CC-4177-847D-1FD38AC69DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD8248F-C9CC-4177-847D-1FD38AC69DC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

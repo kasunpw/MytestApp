@@ -1,0 +1,49 @@
+﻿<html>
+<head>
+    <title>Jasmine Spec Runner</title>
+
+    <!-- Include standard Jasmine lib -->
+    <link href="css/jasmine.css" rel="stylesheet" />
+    <script src="scripts/jasmine-html.js"></script>
+    <script src="scripts/jasmine.js"></script>
+
+    <!-- Include Jasmine JSReporter -->
+
+    <script src="../AngularApp/Scripts/angular.min.js"></script>
+    <script src="../AngularApp/Scripts/angular-resource.min.js"></script>
+    <script src="../AngularApp/Scripts/angular-route.min.js"></script>
+    <script src="../AngularApp/Scripts/angular-mocks.js"></script>
+
+    <!-- Include spec files here... -->
+
+    <script src="test-spec.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+    (function() {
+        var jasmineEnv = jasmine.getEnv();
+        // Register reporters
+        jasmineEnv.addReporter(new jasmine.TrivialReporter());              //< for html
+        jasmineEnv.addReporter(new jasmine.JSReporter());                   //< for jsreporter
+        jasmineEnv.updateInterval = 1000;
+        // Launch test on "window.body.onload"
+        if (window.attachEvent) {
+            window.attachEvent("onload", function() {     //< IE
+                setTimeout(function() {
+                    jasmine.getEnv().execute();
+                }, 50);
+            });
+        } else {
+            window.addEventListener("load", function() {  //< everything else
+                setTimeout(function() {
+                  jasmine.getEnv().execute();
+                }, 50);
+            }, false);
+        }
+    })();
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

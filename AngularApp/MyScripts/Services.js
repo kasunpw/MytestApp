@@ -1,8 +1,4 @@
-﻿/// <reference path="F:\Mahesh_New\Articles\MVC\Infra\A8_SPA_New_MVC_Using_Angular\MVC_Using_Angular\Scripts/angular.min.js" />
-
-/// <reference path="F:\Mahesh_New\Articles\MVC\Infra\A8_SPA_New_MVC_Using_Angular\MVC_Using_Angular\MyScripts/Module.js" />
-
-app.service("SinglePageCRUDService", function ($http) {
+﻿app.service("SinglePageCRUDService", function ($http) {
 
     //Function to Read All Employees
     this.getEmployees = function () {
