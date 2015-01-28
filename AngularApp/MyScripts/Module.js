@@ -4,7 +4,6 @@
         return { value: 0 }
     });
 
-    //Defining Routing
     app.config(['$routeProvider','$locationProvider', function ($routeProvider,$locationProvider) {
         $routeProvider.when('/showemployees',
                             {
